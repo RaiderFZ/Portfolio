@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8acc3a3e.css",
-    "main.js": "/Portfolio/static/js/main.14f58369.js",
+    "main.css": "/Portfolio/static/css/main.3d30043c.css",
+    "main.js": "/Portfolio/static/js/main.8163921e.js",
     "static/media/profile.png": "/Portfolio/static/media/profile.c54efb524ee35173cd60.png",
     "static/media/mythik-native.png": "/Portfolio/static/media/mythik-native.917c21721769307f0d4e.png",
     "static/media/mythik-react.png": "/Portfolio/static/media/mythik-react.917c21721769307f0d4e.png",
@@ -39,11 +39,11 @@
     "static/media/vuejs.svg": "/Portfolio/static/media/vuejs.801cf7be630ae19f4a4fa290ee1f3f94.svg",
     "static/media/npm.svg": "/Portfolio/static/media/npm.2281656d97c87dc89533f2c1f7f5367b.svg",
     "static/media/light-theme.svg": "/Portfolio/static/media/light-theme.4a943337d5ba21c6dbaf.svg",
-    "main.8acc3a3e.css.map": "/Portfolio/static/css/main.8acc3a3e.css.map",
-    "main.14f58369.js.map": "/Portfolio/static/js/main.14f58369.js.map"
+    "main.3d30043c.css.map": "/Portfolio/static/css/main.3d30043c.css.map",
+    "main.8163921e.js.map": "/Portfolio/static/js/main.8163921e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8acc3a3e.css",
-    "static/js/main.14f58369.js"
+    "static/css/main.3d30043c.css",
+    "static/js/main.8163921e.js"
   ]
 }
