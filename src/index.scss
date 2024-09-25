@@ -1,0 +1,11 @@
+@import './scss/reset.scss';
+@import '@fontsource-variable/comfortaa';
+body {
+    font-family: 'Comfortaa Variable', system-ui;
+    color:#000;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+.container {
+    margin-bottom: 2.5rem;
+}

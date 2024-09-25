@@ -1,0 +1,112 @@
+@import '../../scss/mixin.scss'; 
+@import '../../scss/vars.scss';
+
+.project {
+    &-title {
+        @include base-title;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    &__buttons {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+        padding: 0 1rem;
+    }
+    &__buttons-item{
+        padding: 1.25rem 2.5rem;
+        border: none;
+        background: #FFF;
+        box-shadow: 0px 0px 6px rgba(121, 106, 175, 0.1);
+        border-radius: 20px;
+        font-size: 1.5rem;
+        font-family: 'Comfortaa';
+        color: #000;
+        font-weight: 700;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover {
+            background: $primary-color;
+            color: #FFF;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    &__grid-image {
+        border-radius: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    &__grid-title {
+        margin-bottom: 1.25rem;
+        font-size: 1.5rem;
+        color: #000;
+    }
+    &__grid-item {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        width: 36.25rem;
+        box-shadow: 0px 0px 6px rgba(121, 106, 175, 0.1);
+    }
+    &__grid-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__grid-link {
+        display: inline-block;
+        position: relative;
+        color: #000;
+        padding-left: 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        height: 1.3rem;
+        vertical-align: middle;
+        &:hover{
+            color: $primary-color;
+            font-weight: 700;
+        }
+        &.code::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 25%;
+            transform: translate(0, -50%);
+            height: 1.25rem;
+            width: 1.25rem;
+            background-image: url('../../image/git-mini-icon.svg');
+        }
+        &.view::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 25%;
+            transform: translate(0, -50%);
+            height: 1.25rem;
+            width: 1.25rem;
+            background-image: url('../../image/open_in_new.svg');
+        } 
+    }
+    &__grid-wrap {
+        & .underline {
+            @include underline;
+        }
+        &:hover .underline {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .project__grid {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../scss/mixin.scss';
+.technologies {
+    &-container {
+
+    }
+    &-title {
+        @include base-title;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    &__grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+    &__grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 12.5rem;
+        padding: 1.4375rem 3.125rem;
+        border-radius: 0.625rem;
+        box-shadow: 0px 0px 6px rgba(121, 106, 175, 0.1);
+    }
+    &__grid-image {
+        margin-bottom: 0.625rem;
+    }
+    &__grid-text {
+        @include technologies-font;
+    }
+} 

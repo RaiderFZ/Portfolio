@@ -1,0 +1,27 @@
+@mixin technologies-font {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #7C6AB4;
+}
+@mixin logo {
+    display: block;
+    position: relative;
+    font-size: $base-font-size;
+    color: $primary-color;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+@mixin base-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #7C6AB4;
+}
+@mixin underline {
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: $primary-color;
+    transition: width 0.3s;
+}

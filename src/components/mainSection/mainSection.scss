@@ -1,0 +1,27 @@
+@import '../../scss/vars.scss';
+
+.main {
+    height: 100%;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &-title {
+        color: $primary-color;
+        font-size: 4rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+    }
+    &-logo {
+        max-width: 12.5rem;
+    }
+    &-subtitle {
+        color: $primary-color;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 0.4rem;
+    }
+}

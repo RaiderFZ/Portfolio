@@ -1,0 +1,77 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        & .underline {
+            @include underline;
+        } 
+        &:hover .underline {
+            width: 100%;
+        }
+    }
+    &__logo-link {
+        @include logo
+    } 
+    &__nav {
+        display: flex;
+        width: 100%;
+        max-width: 28.125rem;
+        justify-content: space-between;
+        gap: 0.625rem;
+        transition: all .3s;
+        & .dark-theme {
+            color: #FFF;
+        }
+        & .light-theme {
+            background-image: none;
+        }
+    }
+    &__nav-link {
+        color: #000;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 300;
+        transition: all .3s;
+        &:hover {
+            color: $primary-color;
+            font-weight: bold;
+            border-bottom: 0.06rem solid $primary-color;
+        }
+    }
+}
+.burger {
+    display: none;
+}
+
+@media (max-width: 47.5rem) {
+    .burger {
+        width: 3.125rem;
+        height: 3.125rem;
+        position: absolute;
+        right: 0;
+        display: block;
+        &-button {
+            border: none;
+            background: transparent;
+            width: 100%;
+            height: 100%;
+            & .burger-span {
+                height: 0.125rem;
+                background: #000;
+                width: 100%;
+            }
+        } 
+    }
+    
+    .header {
+        &__nav{
+
+        }
+    }
+}

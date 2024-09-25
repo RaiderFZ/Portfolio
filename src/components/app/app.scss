@@ -1,0 +1,36 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 80rem;
+    padding: 2.5rem;
+    margin: 0 auto;
+}
+.header-box {
+    height: 100vh;
+}
+
+.switch-box {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    z-index: 5;
+}
+.switch-theme {
+    width: 3.125rem;
+    height: 3.125rem;
+    border: none;
+    background: transparent;
+}
+.light-theme {
+    background-image: url('../../image/light-theme.svg');
+}
+.dark-mode {
+    color: #FFF;
+    background: #1f1f1f;
+}
